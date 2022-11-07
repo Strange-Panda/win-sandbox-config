@@ -1,9 +1,42 @@
 # win-sandbox-config
  a simple Sandbox-Config
 
+Windows Sandbox is an isolated, temporary desktop environment where you can run untrusted software without the fear of lasting impact to your PC.
+
+Any software installed in Windows Sandbox stays only in the sandbox and cannot affect your host. Once Windows Sandbox is closed, all the software with all its files and state are permanently deleted.
+
 # Windows Sandbox Configuration
 
 This is my configuration for a Windows Sandbox with some basic tools installed.
+
+# Activate Windows Sandbox
+
+## Enable Windows Sandbox with PowerShell:
+Open PowerShell as Administrator.
+
+Type or copy-paste the following command:
+
+Enable-WindowsOptionalFeature -FeatureName "Containers-DisposableClientVM" -All -Online
+
+When prompted to restart the computer, type Y, and press Enter.
+The change can be undone with the following command:
+
+Disable-WindowsOptionalFeature -FeatureName "Containers-DisposableClientVM" -Online
+
+
+## Enable Windows Sandbox with DISM:
+
+Open an elevated command prompt.
+Type or copy-paste the following command:
+
+dism /online /Enable-Feature /FeatureName:"Containers-DisposableClientVM" -All
+
+Restart the computer when prompted.
+
+To disable the Sandbox feature, use this command:
+dism /online /Disable-Feature /FeatureName:"Containers-DisposableClientVM"
+
+# WSB-Files
 
 For configuration options in the `.wsb` file please read [https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-sandbox/windows-sandbox-configure-using-wsb-file](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-sandbox/windows-sandbox-configure-using-wsb-file).
 
