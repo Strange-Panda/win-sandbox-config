@@ -30,11 +30,7 @@ Enable-WindowsOptionalFeature -FeatureName "Containers-DisposableClientVM" -All 
 ```
 
 When prompted to restart the computer, type Y, and press Enter.
-The change can be undone with the following command:
 
-```
-Disable-WindowsOptionalFeature -FeatureName "Containers-DisposableClientVM" -Online
-```
 
 ## Enable Windows Sandbox with DISM:
 
