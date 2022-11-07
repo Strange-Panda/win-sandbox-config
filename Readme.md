@@ -3,7 +3,7 @@
 
 # Windows Sandbox Configuration
 
-This is my configuration for a Windows Sandbox with some basic tools installed. Mostly based on https://github.com/FireFart/sandbox
+This is my configuration for a Windows Sandbox with some basic tools installed.
 
 For configuration options in the `.wsb` file please read [https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-sandbox/windows-sandbox-configure-using-wsb-file](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-sandbox/windows-sandbox-configure-using-wsb-file).
 
