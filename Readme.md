@@ -31,6 +31,7 @@ Enable-WindowsOptionalFeature -FeatureName "Containers-DisposableClientVM" -All 
 
 When prompted to restart the computer, type Y, and press Enter.
 
+# OR
 
 ## Enable Windows Sandbox with DISM:
 
@@ -43,17 +44,18 @@ dism /online /Enable-Feature /FeatureName:"Containers-DisposableClientVM" -All
 Restart the computer when prompted.
 
 
-# WSB-Files
+# Usage
+
+First download all files by executing `.\downloadFiles.ps1` inside powershell. This will download all files needed. Run `.\createSandboxConfig.ps1` once to create the `.wsb` file. This is needed because relative paths are currently not supported by Windows Sandbox.
+
+Then simply doubleclick the `sandbox.wsb` file to launch the sandbox. This will install all needed software on start.
+
+
+## WSB-Files
 
 For configuration options in the `.wsb` file please read [https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-sandbox/windows-sandbox-configure-using-wsb-file](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-sandbox/windows-sandbox-configure-using-wsb-file).
 
 ## Additional info
 
 - nothing here
-
-## Usage
-
-First download all files by executing `.\downloadFiles.ps1` inside powershell. This will download all files needed. Run `.\createSandboxConfig.ps1` once to create the `.wsb` file. This is needed because relative paths are currently not supported by Windows Sandbox.
-
-Then simply doubleclick the `sandbox.wsb` file to launch the sandbox. This will install all needed software on start.
 
