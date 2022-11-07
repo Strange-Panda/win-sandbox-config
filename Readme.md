@@ -25,25 +25,27 @@ Open PowerShell as Administrator.
 
 Type or copy-paste the following command:
 
+```
 Enable-WindowsOptionalFeature -FeatureName "Containers-DisposableClientVM" -All -Online
+```
 
 When prompted to restart the computer, type Y, and press Enter.
 The change can be undone with the following command:
 
+```
 Disable-WindowsOptionalFeature -FeatureName "Containers-DisposableClientVM" -Online
-
+```
 
 ## Enable Windows Sandbox with DISM:
 
 Open an elevated command prompt.
 Type or copy-paste the following command:
 
+```
 dism /online /Enable-Feature /FeatureName:"Containers-DisposableClientVM" -All
-
+```
 Restart the computer when prompted.
 
-To disable the Sandbox feature, use this command:
-dism /online /Disable-Feature /FeatureName:"Containers-DisposableClientVM"
 
 # WSB-Files
 
