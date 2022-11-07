@@ -31,7 +31,7 @@ Enable-WindowsOptionalFeature -FeatureName "Containers-DisposableClientVM" -All 
 
 When prompted to restart the computer, type Y, and press Enter.
 
-# OR
+### OR
 
 ## Enable Windows Sandbox with DISM:
 
