@@ -1,13 +1,22 @@
-# win-sandbox-config
- a simple Sandbox-Config
+# Windows Sandbox Configuration
+
+This is my configuration for a Windows Sandbox with some basic tools installed.
 
 Windows Sandbox is an isolated, temporary desktop environment where you can run untrusted software without the fear of lasting impact to your PC.
 
 Any software installed in Windows Sandbox stays only in the sandbox and cannot affect your host. Once Windows Sandbox is closed, all the software with all its files and state are permanently deleted.
 
-# Windows Sandbox Configuration
+## Software installed in this Sandbox config: 
 
-This is my configuration for a Windows Sandbox with some basic tools installed.
+- Visual Studio Code
+- Notepad++
+- 7-zip
+- Sysinternals Suite
+- Wireshark
+- Npcap (does not support silent install, you have to click next next next)
+- Chocolatey
+
+
 
 # Activate Windows Sandbox
 
@@ -39,18 +48,6 @@ dism /online /Disable-Feature /FeatureName:"Containers-DisposableClientVM"
 # WSB-Files
 
 For configuration options in the `.wsb` file please read [https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-sandbox/windows-sandbox-configure-using-wsb-file](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-sandbox/windows-sandbox-configure-using-wsb-file).
-
-## Software installed
-
-the following software is currently installed
-
-- Visual Studio Code
-- Notepad++
-- 7-zip
-- Sysinternals Suite
-- Wireshark
-- Npcap (does not support silent install, you have to click next next next)
-- Chocolatey
 
 ## Additional info
 
