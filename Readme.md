@@ -11,7 +11,6 @@ Any software installed in Windows Sandbox stays only in the sandbox and cannot a
 - Visual Studio Code
 - Notepad++
 - 7-zip
-- Sysinternals Suite
 - Wireshark
 - Npcap (does not support silent install, you have to click next next next)
 - Chocolatey

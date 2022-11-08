@@ -5,7 +5,6 @@ copy /B /Y /V %SETUP_PATH%\* %TEMP%\
 "%TEMP%\7zip.exe" /S
 "%TEMP%\notepad++.exe" /S
 "%TEMP%\vcredist_x64.exe"  /q /norestart
-"%PROGRAMFILES%\7-Zip\7z.exe" x -aoa "%TEMP%\sysinternals.zip" -o "%USERPROFILE%\Desktop\sysinternals"
 "%TEMP%\vcredist_x64.exe" /passive /norestart
 "%TEMP%\wireshark.exe" /S /desktopicon=yes
 "%TEMP%\npcap.exe" /loopback_support=yes
